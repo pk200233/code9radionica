@@ -16,3 +16,9 @@ terraform {
     }
   }
 }
+
+backend "s3" {
+  bucket = "pokusaj"
+  key = "terraform/s3-site"
+  region = "us-east-1"
+}
