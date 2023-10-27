@@ -16,3 +16,11 @@ terraform {
     }
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "pokusaj"
+    key = "terraform/s3-site-using-module"
+    region = "us-east-1"
+  }
+}
